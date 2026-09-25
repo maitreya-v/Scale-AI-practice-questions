@@ -1,0 +1,5 @@
+id,subject,description
+1,Duplicate charge,I was charged twice for the same invoice
+2,API timeout,The API returns a timeout error when uploading data
+3,Login problem,I cannot reset my password to access my account
+4,Feature request,Please add dark mode to the dashboard
