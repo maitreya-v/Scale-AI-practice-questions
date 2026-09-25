@@ -1,0 +1,5 @@
+project_id,name,priority,capacity,required_course_ids
+p1,Data Quality,10,1,python;sql
+p2,Model Evaluation,8,1,llm
+p3,Internal Tooling,5,2,
+p4,Closed Pilot,20,0,backend

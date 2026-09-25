@@ -1,0 +1,5 @@
+contributor_id,name,completed_course_ids
+c1,Ada,python;sql
+c2,Grace,python;llm
+c3,Linus,backend
+c4,Barbara,python;sql;backend
