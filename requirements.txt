@@ -1,0 +1,1 @@
+# Standard-library-only exercise. Python 3.10+ is sufficient.
