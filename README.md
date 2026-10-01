@@ -1,4 +1,25 @@
-# Day 1 Backend Practical — CSV → JSON → LLM Classification
+# Scale AI practice questions — debugging set
+
+## Eight compact debugging assignments
+
+The [`debugging/`](debugging/) directory contains eight independent, original practice projects. Each has **eight seeded behavioral defects**, eight focused tests, a short contract, and a suggested **45–60 minute** time box. They use only Python's standard library and do not require an API key or service account. Start with any project; the numbered order gradually widens the debugging surface.
+
+| Project | Scenario |
+| --- | --- |
+| [01 Assignment pipeline](debugging/01-assignment/) | Contributor eligibility, priority, capacity, reruns |
+| [02 Silent model output](debugging/02-llm-pipeline/) | Prompt, model client, cache, response parsing |
+| [03 CSV export](debugging/03-csv-export/) | Paths, CSV normalization, JSON output |
+| [04 Task scheduler](debugging/04-task-scheduler/) | Priority, deadlines, workers, retries |
+| [05 Event consumer](debugging/05-event-consumer/) | Partitions, offsets, deduplication, dead letters |
+| [06 Cache and idempotency](debugging/06-cache-idempotency/) | Tenant keys, TTL, replay, failure handling |
+| [07 Async fanout](debugging/07-async-fanout/) | Ordering, concurrency, timeout, cancellation |
+| [08 Feature flags](debugging/08-feature-flags/) | Targeting, rules, rollout, snapshot refresh |
+
+From one project directory, run `python3 -m unittest discover -s tests -v`. The initial failures are intentional. Fix code under that project's `app.py` while preserving its public API and tests. Each project is self-contained, so solving one does not affect the others. These are practice reconstructions inspired by the repository's interview-style exercises, not official Scale AI questions or proprietary material.
+
+---
+
+## Original backend practical — CSV → JSON → LLM classification
 
 **Fidelity:** High-confidence reconstruction
 
@@ -73,11 +94,12 @@ The starter intentionally leaves implementation work for you. Do not change the 
 
 ## Practice setup
 
-Use Python 3.10 or newer. This branch contains only this exercise from the
-prepared practice pack. The starter code, datasets, and tests are unchanged.
+Use Python 3.10 or newer. This branch retains the original backend exercise at
+the repository root and adds the eight debugging projects above. The original
+starter code, datasets, and tests are unchanged.
 
 ```bash
-git clone --single-branch --branch backend-csv-json-llm https://github.com/maitreya-v/Scale-AI-practice-questions.git
+git clone --single-branch --branch debugging-scale-like-eight-projects https://github.com/maitreya-v/Scale-AI-practice-questions.git
 cd Scale-AI-practice-questions
 python3 -m venv .venv
 source .venv/bin/activate
@@ -86,8 +108,8 @@ python -m pytest -q
 ```
 
 On Windows, activate the environment with `.venv\Scripts\activate`.
-Run commands from the repository root. Failing tests are expected until you
-complete the exercise; there is no answer key in this branch.
+Run the original backend exercise commands from the repository root. Failing
+tests are expected until you complete it; there is no answer key in this branch.
 
 This is an original practice reconstruction based on public interview reports
 and guides, not an official Scale AI repository or proprietary interview material.
